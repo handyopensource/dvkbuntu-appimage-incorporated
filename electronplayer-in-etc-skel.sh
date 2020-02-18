@@ -15,14 +15,14 @@ cat << FIN > "/etc/skel/.local/share/applications/electronplayer.desktop"
 [Desktop Entry]
 Comment[fr_FR]=
 Comment=
-Exec=$HOME/AppImage/electronplayer-2.0.8.AppImage
+Exec="AppImage/electronplayer-2.0.8.AppImage"
 GenericName[fr_FR]=Application pour voir des programmes en streaming
 GenericName=Watch streaming site in one app
-Icon=$HOME/.icons/electronplayer.png
+Icon=".icons/electronplayer.png"
 MimeType=
 Name[fr_FR]=ElectronPlayer
 Name=ElectronPlayer
-Path=$HOME
+Path=
 Categories=AudioVideo;Utility;
 StartupNotify=true
 Terminal=false
