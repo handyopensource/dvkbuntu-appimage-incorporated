@@ -1,9 +1,10 @@
 #!/bin/bash
 
-mkdir -p "/etc/skel/AppImage/icons"
+mkdir -p "/usr/share/icons"
+mkdir -p "/etc/skel/AppImage"
 mkdir -p "/etc/skel/.local/share/applications/"
 
-wget "https://github.com/handyopensource/dvkbuntu-appimage-incorporated/raw/master/electronplayer.png" -O "/etc/skel/AppImage/icons/electronplayer.png"
+wget "https://github.com/handyopensource/dvkbuntu-appimage-incorporated/raw/master/electronplayer.png" -O "/usr/share/icons/electronplayer.png"
 wget "https://github.com/oscartbeaumont/ElectronPlayer/releases/download/v2.0.8-rc2/electronplayer-2.0.8.AppImage"
 
 chmod +x electronplayer-2.0.8.AppImage
@@ -16,8 +17,8 @@ Comment[fr_FR]=
 Comment=
 Exec="AppImage/electronplayer-2.0.8.AppImage"
 GenericName[fr_FR]=Application pour voir des programmes en streaming
-GenericName=Watch streaming site in one app
-Icon="AppImage/icons/electronplayer.png"
+GenericName=Watching many streaming sites in one app
+Icon=/usr/share/icons/electronplayer.png
 MimeType=
 Name[fr_FR]=ElectronPlayer
 Name=ElectronPlayer
