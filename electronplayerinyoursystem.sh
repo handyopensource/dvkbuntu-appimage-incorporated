@@ -1,7 +1,10 @@
 #!/bin/bash
 
-wget "https://github.com/handyopensource/dvkbuntu-appimage-incorporated/raw/master/electronplayer.png" -O "$HOME/.icons/electronplayer.png"
+mkdir -p "$HOME/.icons/"
+mkdir -p "$HOME/AppImage/"
+mkdir -p "$HOME/.local/share/applications/"
 
+wget "https://github.com/handyopensource/dvkbuntu-appimage-incorporated/raw/master/electronplayer.png" -O "$HOME/.icons/electronplayer.png"
 wget "https://github.com/oscartbeaumont/ElectronPlayer/releases/download/v2.0.8-rc2/electronplayer-2.0.8.AppImage" -o "$HOME/AppImage/electronplayer-2.0.8.AppImage"
 
 chmod +x electronplayer-2.0.8.AppImage
@@ -18,7 +21,7 @@ MimeType=
 Name[fr_FR]=ElectronPlayer
 Name=ElectronPlayer
 Path=$HOME
-Categories=Internet;Utility;
+Categories=AudioVideo;Utility;
 StartupNotify=true
 Terminal=false
 TerminalOptions=
