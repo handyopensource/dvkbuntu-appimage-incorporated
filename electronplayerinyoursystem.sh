@@ -5,7 +5,7 @@ mkdir -p "$HOME/AppImage/"
 mkdir -p "$HOME/.local/share/applications/"
 
 wget "https://github.com/handyopensource/dvkbuntu-appimage-incorporated/raw/master/electronplayer.png" -O "$HOME/.icons/electronplayer.png"
-wget "https://github.com/oscartbeaumont/ElectronPlayer/releases/download/v2.0.8-rc2/electronplayer-2.0.8.AppImage"
+wget "https://github.com/oscartbeaumont/ElectronPlayer/releases/download/v2.0.8-rc4/electronplayer-2.0.8.AppImage"
 
 chmod +x electronplayer-2.0.8.AppImage
 
